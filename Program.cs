@@ -13,6 +13,7 @@ Rectangle sourceLeft = new Rectangle(0, 300, 100, 150);
 
 Rectangle sourceRight = new Rectangle(0, 450, 100, 150);
 
+Rectangle sourceRight2 = new Rectangle(100, 450, 100, 150);
 
 Raylib.SetTargetFPS(60);
 
@@ -26,8 +27,8 @@ while (!Raylib.WindowShouldClose())
     {
         playerPosition.X += 2.0f;
         oneDirection = sourceRight;
-
     }
+     
     if (Raylib.IsKeyDown(KeyboardKey.Left))
     {
         playerPosition.X -= 2.0f;
